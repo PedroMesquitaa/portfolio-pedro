@@ -5,7 +5,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
   return (
-    <section className={styles.container} id="projects">
+    <section className={styles.container} id="projetos">
       <h2 className={styles.title}>Projetos</h2>
 
       <div className={styles.projects}>
