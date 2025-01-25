@@ -1,10 +1,10 @@
 import styles from "./App.module.css";
-import { About } from "./componets/About/About";
-import { Contact } from "./componets/Contact/Contact";
-import { Experience } from "./componets/Experience/Experience";
-import { Me } from "./componets/Me/Me";
-import { Navbar } from "./componets/Navbar/Navbar";
-import { Projects } from "./componets/Projects/Projects";
+import { About } from "./components/About/About";
+import { Contact } from "./components/Contact/Contact";
+import { Experience } from "./components/Experience/Experience";
+import { Me } from "./components/Me/Me";
+import { Navbar } from "./components/Navbar/Navbar";
+import { Projects } from "./components/Projects/Projects";
 
 function App() {
 
