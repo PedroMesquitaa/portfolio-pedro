@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Projeto ToDo List",
+        "imageSrc": "../../../assets/projects/ToDoList.png",
+        "description": "Este é um projeto para organizar sua lista de tarefas.",
+        "skills": ["JavaScript", "HTML", "CSS"],
+        "demo": "https://pedromesquitaa.github.io/Projeto-ToDo-List/",
+        "source": "https://github.com/PedroMesquitaa/Projeto-ToDo-List"
+    },
+
+    {
+        "title": "Projeto Gestor de Atalhos",
+        "imageSrc": "../../../assets/projects/project.png",
+        "description": "Este é um projeto para automatizar o processo de colocar e tirar atalhos para uma empresa.",
+        "skills": ["C#"],
+        "source": "https://github.com/PedroMesquitaa/ProjetoGestorDeAtalhos"
+    },
+
+    {
+        "title": "Projeto Gestor de Times",
+        "imageSrc": "../../../assets/projects/GestorDeTimes.jpeg",
+        "description": "Este é um projeto para organizar eventos ou campeonatos de jogos para montar times.",
+        "skills": ["React", "Express", "Node"],
+        "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7287566160449916928/",
+        "source": "https://github.com/PedroMesquitaa/ProjetoGestorDeTimes"
+    }
+  ]

@@ -15,7 +15,7 @@ export const Experience = () => {
                             return (
                                 <div key={id} className={styles.skill} style={{ '--index': id }}>
                                     <div className={styles.skillImageContainer}>
-                                        <img src={`../../../assets/skills/${skill.imageSrc}`} alt={skill.title} />
+                                        <img src={skill.imageSrc} alt={skill.title} />
                                     </div>
                                     <p>{skill.title}</p>
                                 </div>
