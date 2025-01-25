@@ -1,0 +1,17 @@
+[
+    {
+        "role": "Estagiário de  Suporte de TI",
+        "organisation": "SCHOTT PHARMA BRASIL",
+        "startDate": "Set, 2023",
+        "endDate": "Nov, 2024",
+        "experiences": ["Suporte técnico, desenvolvimento Full Stack, gestão de softwares, bancos de dados SQL"]
+    },
+
+    {
+        "role": "Estagiário de TI",
+        "organisation": "SESI",
+        "startDate": "Abril, 2023",
+        "endDate": "Set, 2023",
+        "experiences": ["Atuei como monitor de TI, oferecendo suporte, realizando manutenção e montagem de equipamentos"]
+    }
+  ]
