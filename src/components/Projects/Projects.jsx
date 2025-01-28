@@ -1,12 +1,14 @@
 import React from "react";
 import styles from "./Projects.module.css";
-import projects from "../../data/projects.json";
 import { ProjectCard } from "./ProjectCard";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
-  const { t } = useTranslation(); // Hook para acessar traduções
+  const { t } = useTranslation();
+
+  // Pega a lista de projetos diretamente do JSON traduzido
+  const projects = t("projects.list", { returnObjects: true });
 
   return (
     <section className={styles.container} id="projetos">
@@ -17,7 +19,7 @@ export const Projects = () => {
         viewport={{ once: true }}
         className={styles.title}
       >
-        {t("navbar.button1")}
+        {t("projects.title1")}
       </motion.h2>
 
       <div className={styles.projects}>

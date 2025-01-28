@@ -46,10 +46,8 @@
 
     "projects": {
         "title1": "Projetos",
-        "projects": [
-
+        "list": [
             {
-
                 "title": "Projeto ToDo List",
                 "imageSrc": "../../../assets/projects/ToDoList.png",
                 "description": "Este é um projeto para organizar sua lista de tarefas.",
@@ -57,7 +55,7 @@
                 "demo": "https://pedromesquitaa.github.io/Projeto-ToDo-List/",
                 "source": "https://github.com/PedroMesquitaa/Projeto-ToDo-List"
             },
-
+        
             {
                 "title": "Projeto Gestor de Atalhos",
                 "imageSrc": "../../../assets/projects/project.png",
@@ -65,7 +63,7 @@
                 "skills": ["C#"],
                 "source": "https://github.com/PedroMesquitaa/ProjetoGestorDeAtalhos"
             },
-
+        
             {
                 "title": "Projeto Gestor de Times",
                 "imageSrc": "../../../assets/projects/GestorDeTimes.jpeg",
@@ -74,7 +72,7 @@
                 "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7287566160449916928/",
                 "source": "https://github.com/PedroMesquitaa/ProjetoGestorDeTimes"
             },
-
+        
             {
                 "title": "Personal Portfolio",
                 "imageSrc": "../../../assets/projects/PortfolioPedro.png",
@@ -87,6 +85,7 @@
     },
 
     "contact": {
-
+        "title1": "Contato",
+        "text1": "Sinta-se à vontade para entrar em contato!"
     }
 }

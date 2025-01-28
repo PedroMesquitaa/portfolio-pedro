@@ -14,6 +14,7 @@ const container = (delay) => ({
 
 export const Me = () => {
   const { t } = useTranslation();
+  const portugueseResume = 'Cv/CV Pedro Henrique Mesquita Patelli.pdf';
 
   return (
     <section className={styles.container}>
@@ -43,7 +44,7 @@ export const Me = () => {
           variants={container(1)}
           initial="hidden"
           animate="visible"
-          href="../../../public/Cv/CV Pedro Henrique Mesquita Patelli.pdf"
+          href={portugueseResume}
           className={styles.cvBtn}
           target="_blank"
           rel="noopener noreferrer"
