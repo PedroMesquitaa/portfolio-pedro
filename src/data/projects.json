@@ -23,5 +23,14 @@
         "skills": ["React", "Express", "Node"],
         "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7287566160449916928/",
         "source": "https://github.com/PedroMesquitaa/ProjetoGestorDeTimes"
+    },
+
+    {
+        "title": "Personal Portfolio",
+        "imageSrc": "../../../assets/projects/PortfolioPedro.png",
+        "description": "Este é o meu portfólio pessoal, onde mostra minhas experiências, habilidades,projestos e contatos.",
+        "skills": ["React", "JavaScript", "CSS"],
+        "demo": "https://portfolio-pedro-nu.vercel.app/#experiencia",
+        "source": "https://github.com/PedroMesquitaa/portfolio-pedro"
     }
   ]

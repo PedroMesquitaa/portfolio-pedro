@@ -5,6 +5,7 @@ import { Experience } from "./components/Experience/Experience";
 import { Me } from "./components/Me/Me";
 import { Navbar } from "./components/Navbar/Navbar";
 import { Projects } from "./components/Projects/Projects";
+import './i18n'
 
 function App() {
 

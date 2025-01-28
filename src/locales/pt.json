@@ -1,0 +1,92 @@
+{
+    "navbar": {
+        "button1": "Sobre",
+        "button2": "Experiência",
+        "button3": "Projetos",
+        "button4": "Contato"
+    },
+
+    "me": {
+        "title1": "Oi, sou o Pedro Mesquita",
+        "text": "Sou programador full-stack usando React e NodeJS. Entre em contato se quiser saber mais!",
+        "button1": "Download CV"
+    },
+
+    "about": {
+        "title1": "Sobre",
+        "title2": "Desenvolvedor Frontend",
+        "text1": "Sou um desenvolvedor frontend com experiência em criarsites responsivos e otimizados.",
+        "title3": "Desenvolvedor Backend",
+        "text2": "Tenho experiência em desenvolver sistemas back-end rápidos eotimizados e APIs."
+    },
+
+    "experience": {
+        "title1": "Experiência",
+        "history": [
+            {
+                "role": "Estagiário de Suporte de TI",
+                "organisation": "SCHOTT PHARMA BRASIL",
+                "startDate": "Set, 2023",
+                "endDate": "Nov, 2024",
+                "experiences": [
+                    "Suporte técnico, desenvolvimento Full Stack, gestão de softwares, bancos de dados SQL"
+                ]
+            },
+            {
+                "role": "Estagiário de TI",
+                "organisation": "SESI",
+                "startDate": "Abril, 2023",
+                "endDate": "Set, 2023",
+                "experiences": [
+                    "Atuei como monitor de TI, oferecendo suporte, realizando manutenção e montagem de equipamentos"
+                ]
+            }
+        ]
+    },
+
+    "projects": {
+        "title1": "Projetos",
+        "projects": [
+
+            {
+
+                "title": "Projeto ToDo List",
+                "imageSrc": "../../../assets/projects/ToDoList.png",
+                "description": "Este é um projeto para organizar sua lista de tarefas.",
+                "skills": ["JavaScript", "HTML", "CSS"],
+                "demo": "https://pedromesquitaa.github.io/Projeto-ToDo-List/",
+                "source": "https://github.com/PedroMesquitaa/Projeto-ToDo-List"
+            },
+
+            {
+                "title": "Projeto Gestor de Atalhos",
+                "imageSrc": "../../../assets/projects/project.png",
+                "description": "Este é um projeto para automatizar o processo de colocar e tirar atalhos para uma empresa.",
+                "skills": ["C#"],
+                "source": "https://github.com/PedroMesquitaa/ProjetoGestorDeAtalhos"
+            },
+
+            {
+                "title": "Projeto Gestor de Times",
+                "imageSrc": "../../../assets/projects/GestorDeTimes.jpeg",
+                "description": "Este é um projeto para organizar eventos ou campeonatos de jogos para montar times.",
+                "skills": ["React", "Express", "Node"],
+                "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7287566160449916928/",
+                "source": "https://github.com/PedroMesquitaa/ProjetoGestorDeTimes"
+            },
+
+            {
+                "title": "Personal Portfolio",
+                "imageSrc": "../../../assets/projects/PortfolioPedro.png",
+                "description": "Este é o meu portfólio pessoal, onde mostra minhas experiências, habilidades,projestos e contatos.",
+                "skills": ["React", "JavaScript", "CSS"],
+                "demo": "https://portfolio-pedro-nu.vercel.app/#experiencia",
+                "source": "https://github.com/PedroMesquitaa/portfolio-pedro"
+            }
+        ]
+    },
+
+    "contact": {
+
+    }
+}

@@ -35,16 +35,72 @@
     margin-bottom: 52px;
 }
 
-.contactBtn {
-    text-decoration: none;
-    background-color: var(--color-primary);
-    color: var(--color-text);
-    border-radius: 100px;
-    font-size: 30px;
-    font-weight: 600;
-    padding: 17px 26px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0,25);
-}
+.cvBtn {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .cvBtn::after,
+  .cvBtn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+  }
+  
+  .cvBtn::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #5370f0;
+    border-radius: 10px;
+  }
+  
+  .cvBtn::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+  }
+  
+  .cvBtn:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+  }
+  
+  .cvBtn:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cvBtn:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+  }
 
 .meImg {
     padding-top: 30px;
@@ -113,5 +169,34 @@
         padding-left: 0;
         padding-top: 0;
         width: 50%;
+    }
+
+    /* Removendo hovers no botão cvBtn */
+    .cvBtn {
+        all: unset;
+        width: 100px;
+        height: 30px;
+        font-size: 16px;
+        background: #5370f0; /* Cor sólida para o botão */
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        user-select: none;
+        border-radius: 10px; /* Mantendo um design simples */
+    }
+
+    .cvBtn::after,
+    .cvBtn::before {
+        content: none; /* Remove os pseudo-elementos */
+    }
+
+    .cvBtn:hover {
+        background: #5370f0; /* Nenhuma alteração no hover */
     }
 }
