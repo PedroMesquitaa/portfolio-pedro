@@ -32,7 +32,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <a className={styles.logo} href="/">
-        <img src="../../../public/favicon.ico" alt="Pedro Mesquita logo" />
+        <img src="../../public/favicon.ico" alt="Pedro Mesquita logo" />
       </a>
       <div className={styles.menu}>
         <img
