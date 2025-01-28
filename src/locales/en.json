@@ -1,0 +1,86 @@
+{
+    "navbar": {
+        "button1": "About",
+        "button2": "Experience",
+        "button3": "Projects",
+        "button4": "Contact"
+    },
+
+    "me": {
+        "title1": "Hi, I'm Pedro Mesquita",
+        "text": "I'm a full-stack programmer using React and NodeJS. Get in touch if you want to know more!",
+        "button1": "Resume"
+    },
+
+    "about": {
+        "title1": "About me",
+        "title2": "Frontend Developer",
+        "text1": "I'm a front-end developer with experience in creating responsive and optimized websites.",
+        "title3": "Backend Developer",
+        "text2": "I have experience in developing fast and optimized back-end systems and APIs."
+    },
+
+    "experience": {
+        "title1": "Experience",
+        "history": [
+            {
+                "role": "IT Support Intern",
+                "organisation": "SCHOTT PHARMA BRASIL",
+                "startDate": "Sep, 2023",
+                "endDate": "Nov, 2024",
+                "experiences": [
+                    "Technical support, full-stack development, software management, SQL databases"
+                ]
+            },
+            {
+                "role": "IT Intern",
+                "organisation": "SESI",
+                "startDate": "April, 2023",
+                "endDate": "Sep, 2023",
+                "experiences": [
+                    "Worked as an IT monitor, providing support, performing maintenance, and assembling equipment"
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title1": "Projects",
+        "projects": [
+            {
+                "title": "ToDo List Project",
+                "imageSrc": "../../../assets/projects/ToDoList.png",
+                "description": "This is a project to organize your task list.",
+                "skills": ["JavaScript", "HTML", "CSS"],
+                "demo": "https://pedromesquitaa.github.io/Projeto-ToDo-List/",
+                "source": "https://github.com/PedroMesquitaa/Projeto-ToDo-List"
+            },
+            {
+                "title": "Shortcut Manager Project",
+                "imageSrc": "../../../assets/projects/project.png",
+                "description": "This is a project to automate the process of adding and removing shortcuts for a company.",
+                "skills": ["C#"],
+                "source": "https://github.com/PedroMesquitaa/ProjetoGestorDeAtalhos"
+            },
+            {
+                "title": "Team Manager Project",
+                "imageSrc": "../../../assets/projects/GestorDeTimes.jpeg",
+                "description": "This is a project to organize events or game tournaments to form teams.",
+                "skills": ["React", "Express", "Node"],
+                "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7287566160449916928/",
+                "source": "https://github.com/PedroMesquitaa/ProjetoGestorDeTimes"
+            },
+            {
+                "title": "Personal Portfolio",
+                "imageSrc": "../../../assets/projects/PortfolioPedro.png",
+                "description": "This is my personal portfolio, showcasing my experiences, skills, projects, and contacts.",
+                "skills": ["React", "JavaScript", "CSS"],
+                "demo": "https://portfolio-pedro-nu.vercel.app/#experiencia",
+                "source": "https://github.com/PedroMesquitaa/portfolio-pedro"
+            }
+        ]
+    },
+
+    "contact": {
+
+    }
+}

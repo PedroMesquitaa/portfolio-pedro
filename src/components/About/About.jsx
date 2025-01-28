@@ -1,31 +1,70 @@
 import React from "react";
+import { motion } from "framer-motion"; // Importa Framer Motion
 import styles from "./About.module.css";
+import { useTranslation } from "react-i18next"
 
 export const About = () => {
-    return (
-        <section className={styles.container} id="sobre">
-            <h2 className={styles.title}>Sobre</h2>
-            <div className={styles.content}>
-                <img src="../../../assets/about/aboutImage.png" alt="Me sitting with a laptop" className={styles.aboutImage} />
+  const { t } = useTranslation();
 
-                <ul className={styles.aboutItems}>
-                    <li className={styles.aboutItem}>
-                        <img src="../../../assets/about/cursorIcon.png" alt="cursor icon" />
-                        <div className={styles.aboutItemText}>
-                            <h3>Desenvolvedor Frontend</h3>
-                            <p>Sou um desenvolvedor frontend com experiência em criar sites responsivos e o otimizados</p>
-                        </div>
-                    </li>
+  return (
+    <section className={styles.container} id="sobre">
+      <motion.h2
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className={styles.title}
+      >
+        {t("about.title1")}
+      </motion.h2>
 
-                    <li className={styles.aboutItem}>
-                        <img src="../../../assets/about/serverIcon.png" alt="cursor icon" />
-                        <div className={styles.aboutItemText}>
-                            <h3>Desenvolvedor Backend</h3>
-                            <p>Tenho experiência em desenvolver sistemas back-end rápidos e otimizados e APIs</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>           
-        </section>
-    );
+      <div className={styles.content}>
+        {/* Imagem com animação */}
+        <motion.img
+          src="../../../assets/about/aboutImage.png"
+          alt="Me sitting with a laptop"
+          className={styles.aboutImage}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        />
+
+        <ul className={styles.aboutItems}>
+          {/* Item 1 */}
+          <motion.li
+            className={styles.aboutItem}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <img src="../../../assets/about/cursorIcon.png" alt="cursor icon" />
+            <div className={styles.aboutItemText}>
+              <h3>{t("about.title2")}</h3>
+              <p>
+              {t("about.text1")}
+              </p>
+            </div>
+          </motion.li>
+
+          {/* Item 2 */}
+          <motion.li
+            className={styles.aboutItem}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <img src="../../../assets/about/serverIcon.png" alt="server icon" />
+            <div className={styles.aboutItemText}>
+              <h3>{t("about.title3")}</h3>
+              <p>
+              {t("about.text2")}
+              </p>
+            </div>
+          </motion.li>
+        </ul>
+      </div>
+    </section>
+  );
 };

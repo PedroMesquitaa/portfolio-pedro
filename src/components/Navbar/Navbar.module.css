@@ -10,13 +10,6 @@
     margin: 0 10%;
 }
 
-.title {
-    font-size: 30px;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--color-text);
-}
-
 .menuBtn {
     display: none;
   }
@@ -32,10 +25,103 @@
 }
 
 .menuItems a {
-    font-size: 25px;
-    color: var(--color-text);
     text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    line-height: 1;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+        to right,
+        var(--color-primary),
+        var(--color-primary) 50%,
+        #fff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition: all 0.3s ease-in-out;
 }
+
+.menuItems a::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    z-index: 0;
+    background: var(--color-primary);
+    transition: all 0.3s ease-in-out;
+}
+
+.menuItems a:hover {
+    background-position: 0%;
+}
+
+.menuItems a:hover::before {
+    width: 100%;
+}
+
+.languageButton {
+    margin-left: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-size: 36px;
+  }
+  
+  .languageButton:hover {
+    background-color: var(--color-primary);
+  }
+  
+  .languageMenu {
+    background: var(--color-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.514);
+    border-radius: 8px;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+  }
+  
+  .languageItem {
+    padding: 8px 12px;
+    color: var(--color-text);
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .languageItem:hover {
+    background-color: var(--color-primary);
+    color: white;
+  }
+  
+  .languageSelected {
+    font-weight: bold;
+    color: var(--color-primary);
+  }
+  
+  .checkIcon {
+    color: var(--color-primary);
+  }
+  
 
 @media screen and (max-width: 830px) {
     .navbar {
@@ -73,5 +159,17 @@
     .menuOpen {
         display: flex;
         z-index: 1;
+    }
+
+    .menuItems a {
+        background: none; /* Remove o gradiente animado */
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: var(--color-text); /* Define uma cor sólida para o texto */
+        transition: none; /* Remove a animação */
+        position: static; /* Reseta o posicionamento relativo */
+    }
+    
+    .menuItems a::before {
+        display: none; /* Oculta a linha deslizante */
     }
 }
