@@ -1,175 +1,173 @@
 @import "../../vars.css";
 
 .navbar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 61px;
-    z-index: 2;
-    margin: 0 10%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 61px;
+  z-index: 2;
+  margin: 0 10%;
 }
 
 .menuBtn {
-    display: none;
-  }
+  display: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 101;
+}
 
 .menu {
-    display: flex;
+  display: flex;
+  align-items: center;
 }
 
 .menuItems {
-    display: flex;
-    gap: 47px;
-    list-style: none;
+  display: flex;
+  gap: 47px;
+  list-style: none;
 }
 
 .menuItems a {
-    text-decoration: none;
-    display: block;
-    padding: 5px 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 26px;
-    line-height: 1;
-    font-weight: bold;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(
-        to right,
-        var(--color-primary),
-        var(--color-primary) 50%,
-        #fff 50%
-    );
-    background-size: 200% 100%;
-    background-position: -100%;
-    transition: all 0.3s ease-in-out;
-}
-
-.menuItems a::before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 3px;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    z-index: 0;
-    background: var(--color-primary);
-    transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-primary) 50%,
+    #fff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  transition: all 0.3s ease-in-out;
 }
 
 .menuItems a:hover {
-    background-position: 0%;
+  background-position: 0%;
+}
+
+.menuItems a::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background: var(--color-primary);
+  transition: width 0.3s ease-in-out;
 }
 
 .menuItems a:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 .languageButton {
-    margin-left: 40px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: transparent;
-    color: var(--color-text);
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-    font-size: 36px;
-  }
-  
-  .languageButton:hover {
-    background-color: var(--color-primary);
-  }
-  
-  .languageMenu {
-    background: var(--color-bg);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.514);
-    border-radius: 8px;
-    padding: 8px 0;
-    display: flex;
-    flex-direction: column;
-    z-index: 10;
-    position: absolute;
-    right: 0;
-  }
-  
-  .languageItem {
-    padding: 8px 12px;
-    color: var(--color-text);
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .languageItem:hover {
-    background-color: var(--color-primary);
-    color: white;
-  }
-  
-  .languageSelected {
-    font-weight: bold;
-    color: var(--color-primary);
-  }
-  
-  .checkIcon {
-    color: var(--color-primary);
-  }
-  
+  margin-left: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  font-size: 36px;
+}
 
+.languageButton:hover {
+  background-color: var(--color-primary);
+}
+
+.languageMenu {
+  background: var(--color-bg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.514);
+  border-radius: 8px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+}
+
+.languageItem {
+  padding: 8px 12px;
+  color: var(--color-text);
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.languageItem:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.languageSelected {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.checkIcon {
+  color: var(--color-primary);
+}
+
+/* Responsividade */
 @media screen and (max-width: 830px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .menu {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+  }
 
-    .menu {
-        position: absolute;
-        right: 0;
-        margin-right: 10%;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 11px;
-        z-index: 3;
-    }
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+  }
 
-    .menuBtn{
-        display: block;
-        cursor: pointer;
-    }
+  .menuItems {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgb(25, 55, 109);
+    background: linear-gradient(0deg, rgba(25, 55, 109, 0.2) 0%, rgba(25,55,109, 1) 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
 
-    .menuItems {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        gap: 13px;
-        border-radius: 10px;
-        background: rgb(25, 55, 109);
-        background: linear-gradient(0deg, rgba(25, 55, 109, 0.2) 0%, rgba(25,55,109, 1) 100%);
-        padding: 24px 33px;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-    }
+  .menuOpen {
+    display: flex;
+    animation: slideDown 0.3s ease-in-out;
+     z-index: 1;
+  }
 
-    .menuOpen {
-        display: flex;
-        z-index: 1;
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
     }
-
-    .menuItems a {
-        background: none; /* Remove o gradiente animado */
-        -webkit-background-clip: unset;
-        -webkit-text-fill-color: var(--color-text); /* Define uma cor sólida para o texto */
-        transition: none; /* Remove a animação */
-        position: static; /* Reseta o posicionamento relativo */
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-    
-    .menuItems a::before {
-        display: none; /* Oculta a linha deslizante */
-    }
+  }
 }

@@ -35,56 +35,62 @@ export const Navbar = () => {
         <img src="/favicon.ico" alt="Pedro Mesquita logo" />
       </a>
       <div className={styles.menu}>
-        <img
-          className={styles.menuBtn}
-          src={
-            menuOpen
-              ? "/assets/nav/closeIcon.png"
-              : "/assets/nav/menuIcon.png"
-          }
-          alt="menu-button"
-          onClick={() => setMenuOpen(!menuOpen)}
-        />
-        <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
-          onClick={() => setMenuOpen(false)}
-        >
-          <li>
-            <a href="#sobre">{t("navbar.button1")}</a>
-          </li>
-          <li>
-            <a href="#experiencia">{t("navbar.button2")}</a>
-          </li>
-          <li>
-            <a href="#projetos">{t("navbar.button3")}</a>
-          </li>
-          <li>
-            <a href="#contato">{t("navbar.button4")}</a>
-          </li>
-        </ul>
-        {/* Language Selector */}
-        <DropdownMenu.Root>
-          <DropdownMenu.Trigger asChild>
-            <button className={styles.languageButton}>
-              <RiGlobalLine />
-            </button>
-          </DropdownMenu.Trigger>
-          <DropdownMenu.Content
-            className={styles.languageMenu}
-            align="end"
+        {/* Menu Button Section */}
+        <div className={styles.menuButtonContainer}>
+          <img
+            className={styles.menuBtn}
+            src={
+              menuOpen
+                ? "/assets/nav/closeIcon.png"
+                : "/assets/nav/menuIcon.png"
+            }
+            alt="menu-button"
+            onClick={() => setMenuOpen(!menuOpen)}
+          />
+          <ul
+            className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
+            onClick={() => setMenuOpen(false)}
           >
-            <LanguageItem
-              language="English"
-              onClick={() => handleChangeLanguage("en")}
-              isSelected={selectedLanguage === "en"}
-            />
-            <LanguageItem
-              language="Português"
-              onClick={() => handleChangeLanguage("pt")}
-              isSelected={selectedLanguage === "pt"}
-            />
-          </DropdownMenu.Content>
-        </DropdownMenu.Root>
+            <li>
+              <a href="#sobre">{t("navbar.button1")}</a>
+            </li>
+            <li>
+              <a href="#experiencia">{t("navbar.button2")}</a>
+            </li>
+            <li>
+              <a href="#projetos">{t("navbar.button3")}</a>
+            </li>
+            <li>
+              <a href="#contato">{t("navbar.button4")}</a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Language Selector Section */}
+        <div className={styles.languageButtonContainer}>
+          <DropdownMenu.Root>
+            <DropdownMenu.Trigger asChild>
+              <button className={styles.languageButton}>
+                <RiGlobalLine />
+              </button>
+            </DropdownMenu.Trigger>
+            <DropdownMenu.Content
+              className={styles.languageMenu}
+              align="end"
+            >
+              <LanguageItem
+                language="English"
+                onClick={() => handleChangeLanguage("en")}
+                isSelected={selectedLanguage === "en"}
+              />
+              <LanguageItem
+                language="Português"
+                onClick={() => handleChangeLanguage("pt")}
+                isSelected={selectedLanguage === "pt"}
+              />
+            </DropdownMenu.Content>
+          </DropdownMenu.Root>
+        </div>
       </div>
     </nav>
   );
