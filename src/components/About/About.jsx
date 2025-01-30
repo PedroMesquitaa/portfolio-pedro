@@ -38,6 +38,23 @@ export const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
+            <img src="../../../assets/about/uiIcon.png" alt="cursor icon" />
+            <div className={styles.aboutItemText}>
+              <h3>{t("about.title4")}</h3>
+              <p>
+              {t("about.text3")}
+              </p>
+            </div>
+          </motion.li>
+
+          {/* Item 2 */}
+          <motion.li
+            className={styles.aboutItem}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <img src="../../../assets/about/cursorIcon.png" alt="cursor icon" />
             <div className={styles.aboutItemText}>
               <h3>{t("about.title2")}</h3>
@@ -47,7 +64,7 @@ export const About = () => {
             </div>
           </motion.li>
 
-          {/* Item 2 */}
+          {/* Item 3 */}
           <motion.li
             className={styles.aboutItem}
             initial={{ opacity: 0, x: -100 }}

@@ -17,7 +17,9 @@
         "title2": "Frontend Developer",
         "text1": "I'm a front-end developer with experience in creating responsive and optimized websites.",
         "title3": "Backend Developer",
-        "text2": "I have experience in developing fast and optimized back-end systems and APIs."
+        "text2": "I have experience in developing fast and optimized back-end systems and APIs.",
+        "title4": "My Career",
+        "text3": "Trainee developer with a focus on Full Stack projects. I have practical experience in JavaScript, TypeScript, React, Node.js and Vue.js, as well as knowledge of SQL databases. In my career, I have contributed to process automation and improving internal systems, always with the intention of optimizing both the logic and the interface of the projects."
     },
 
     "experience": {

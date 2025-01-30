@@ -13,9 +13,12 @@ const container = (delay) => ({
 });
 
 export const Me = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const portugueseResume = 'Cv/CV Pedro Henrique Mesquita Patelli.pdf';
+  const englishResume = 'Cv/English Resume Pedro Henrique Mesquita Patelli.pdf';
 
+  const currentLang = i18n.language;
+  
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -44,7 +47,7 @@ export const Me = () => {
           variants={container(1)}
           initial="hidden"
           animate="visible"
-          href={portugueseResume}
+          href={currentLang === "pt" ? portugueseResume : englishResume}
           className={styles.cvBtn}
           target="_blank"
           rel="noopener noreferrer"

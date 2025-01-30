@@ -72,12 +72,19 @@
     .container {
         margin-top: 0px;
         background-color: transparent;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 20px; /* Reduzi o padding */
+    }
+
+    .title {
+        margin-top: 50px;
+        font-size: 28px; /* Reduzi o tamanho da fonte */
+        text-align: center;
     }
 
     .content {
         flex-direction: column;
+        align-items: center;
+        text-align: center; /* Alinha o texto ao centro */
     }
 
     .aboutImage {
@@ -85,11 +92,34 @@
     }
 
     .aboutItems {
-        margin-top: 29px;
+        margin-top: 20px;
+        gap: 30px; /* Reduzi o espaçamento entre os itens */
     }
 
     .aboutItem {
-        padding-left: 0;
-        padding-right: 0;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px; /* Reduzi o padding */
+        text-align: center;
+    }
+
+    .aboutItem img {
+        width: 60px; /* Reduzi o tamanho dos ícones */
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .aboutItem h3 {
+        font-size: 40px; /* Reduzi o tamanho do título */
+        font-weight: 600;
+    }
+
+    .aboutItem p {
+        font-size: 19px; /* Reduzi o tamanho do texto */
+        line-height: 1.4; /* Melhor espaçamento entre linhas */
+    }
+
+    .aboutItem:hover {
+        background-size: 0% 0%;
     }
 }

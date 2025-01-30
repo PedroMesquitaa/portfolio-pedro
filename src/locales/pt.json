@@ -17,7 +17,9 @@
         "title2": "Desenvolvedor Frontend",
         "text1": "Sou um desenvolvedor frontend com experiência em criarsites responsivos e otimizados.",
         "title3": "Desenvolvedor Backend",
-        "text2": "Tenho experiência em desenvolver sistemas back-end rápidos eotimizados e APIs."
+        "text2": "Tenho experiência em desenvolver sistemas back-end rápidos eotimizados e APIs.",
+        "title4": "Minha Carreira",
+        "text3": "Desenvolvedor em formação com foco em projetos Full Stack. Tenho experiência prática em JavaScript, TypeScript, React, Node.js e Vue.js, além de conhecimento em bancos de dados SQL. Na minha trajetória, já contribuí para automação de processos e melhoria de sistemas internos, sempre com a intenção de otimizar tanto a lógica quanto a interface dos projetos."
     },
 
     "experience": {
