@@ -8,7 +8,7 @@
 
     "me": {
         "title1": "Hi, I'm Pedro Mesquita",
-        "text": "I'm a full-stack programmer using React and NodeJS. Get in touch if you want to know more!",
+        "text": "I'm a full-stack developer with a focus on C#, .NET and React. Get in touch if you'd like to know more!",
         "button1": "Resume"
     },
 
@@ -19,7 +19,7 @@
         "title3": "Backend Developer",
         "text2": "I have experience in developing fast and optimized back-end systems and APIs.",
         "title4": "My Career",
-        "text3": "Trainee developer with a focus on Full Stack projects. I have practical experience in JavaScript, TypeScript, React, Node.js and Vue.js, as well as knowledge of SQL databases. In my career, I have contributed to process automation and improving internal systems, always with the intention of optimizing both the logic and the interface of the projects."
+        "text3": "Developer in training with a focus on Full Stack projects. I have practical experience with C#, .NET, JavaScript, Node.js and React, as well as knowledge of SQL databases. I have already contributed to the automation of processes and the improvement of internal systems, always seeking to optimize logic and the user experience."
     },
 
     "experience": {
@@ -78,6 +78,15 @@
                 "skills": ["React", "JavaScript", "CSS"],
                 "demo": "https://portfolio-pedro-nu.vercel.app/#experiencia",
                 "source": "https://github.com/PedroMesquitaa/portfolio-pedro"
+            },
+
+            {
+                "title": "Expense Tracker",
+                "imageSrc": "../../../assets/projects/ExpenseTracker.png",
+                "description": "This is an application project for controlling expenses with dynamic graphics and categorization of expenses.",
+                "skills": ["ASP.NET", "SQL Server", "C#"],
+                "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7317902079694397440/",
+                "source": "https://github.com/PedroMesquitaa/Expense-Tracker"
             }
         ]
     },
