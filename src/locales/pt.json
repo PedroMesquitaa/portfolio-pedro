@@ -8,7 +8,7 @@
 
     "me": {
         "title1": "Oi, sou o Pedro Mesquita",
-        "text": "Sou programador full-stack usando React e NodeJS. Entre em contato se quiser saber mais!",
+        "text": "Sou desenvolvedor full-stack com foco em C#, .NET e React. Entre em contato se quiser saber mais!",
         "button1": "Download CV"
     },
 
@@ -17,9 +17,9 @@
         "title2": "Desenvolvedor Frontend",
         "text1": "Sou um desenvolvedor frontend com experiência em criar sites responsivos e otimizados.",
         "title3": "Desenvolvedor Backend",
-        "text2": "Tenho experiência em desenvolver sistemas back-end rápidos eotimizados e APIs.",
+        "text2": "Tenho experiência em desenvolver sistemas back-end rápidos, otimizados e APIs.",
         "title4": "Minha Carreira",
-        "text3": "Desenvolvedor em formação com foco em projetos Full Stack. Tenho experiência prática em JavaScript, TypeScript, React, Node.js e Vue.js, além de conhecimento em bancos de dados SQL. Na minha trajetória, já contribuí para automação de processos e melhoria de sistemas internos, sempre com a intenção de otimizar tanto a lógica quanto a interface dos projetos."
+        "text3": "Desenvolvedor em formação com foco em projetos Full Stack. Tenho experiência prática com C#, .NET, JavaScript, Node.js e React, além de conhecimento em bancos de dados SQL. Já contribuí para a automação de processos e melhoria de sistemas internos, sempre buscando otimizar a lógica e a experiência do usuário."
     },
 
     "experience": {
@@ -82,6 +82,15 @@
                 "skills": ["React", "JavaScript", "CSS"],
                 "demo": "https://portfolio-pedro-nu.vercel.app/#experiencia",
                 "source": "https://github.com/PedroMesquitaa/portfolio-pedro"
+            },
+
+            {
+                "title": "Tracker de Despesas",
+                "imageSrc": "../../../assets/projects/ExpenseTracker.png",
+                "description": "Este é um projeto de aplicação para controle de despesas com gráficos dinâmicos e categorização de gastos.",
+                "skills": ["ASP.NET", "SQL Server", "C#"],
+                "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7317902079694397440/",
+                "source": "https://github.com/PedroMesquitaa/Expense-Tracker"
             }
         ]
     },

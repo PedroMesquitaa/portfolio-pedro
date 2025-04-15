@@ -1,5 +1,15 @@
 [
     {
+        "title": ".NET",
+        "imageSrc": "../../../assets/skills/DotNet.png"
+    },
+
+    {
+        "title": "C#",
+        "imageSrc": "../../../assets/skills/c-sharp.png"
+    },
+
+    {
         "title": "JavaScript",
         "imageSrc": "../../../assets/skills/javascript.png"
     },
@@ -27,6 +37,11 @@
     {
         "title": "MongoDB",
         "imageSrc": "../../../assets/skills/mongodb.png"
+    },
+
+    {
+        "title": "SQL",
+        "imageSrc": "../../../assets/skills/SQL.png"
     },
 
     {
